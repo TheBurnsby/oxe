@@ -81,57 +81,69 @@ Oxe.component.define({
 		Say('v-home created');
 	},
 	html: `
-		<h2>Overview</h2>
+		<div class="title">
+			<h1>Oxe</h1>
+			<h2>A mighty tinny web components framework/library</h2>
+			<a class="button" src="">DOXE</a>
+			<a class="button" src="">GITHUB</a>
+		</div>
 
-		<strong>Synopsis</strong>
-		<p>
-			A small but mighty web components framework/library.
-		</p>
-
-		<strong>Features</strong>
-		<ul>
-			<li>Really Small 8.09KB gzipped and 27.08KB uncompressed</li>
-			<li>In browser ES6/ESM module and template strings support</li>
-		</ul>
-
-		<strong>Support</strong>
-		<ul>
-			<li>IE10~</li>
-			<li>IE11</li>
-			<li>Chrome</li>
-			<li>Firefox</li>
-			<li>Safari 7</li>
-			<li>Mobile Safari</li>
-			<li>Chrome Android</li>
-		</ul>
-
-		<strong>Note</strong>
-		<p>
-		Loader uses <i>XHR </i> and <i>new Function</i> to load on-demand and execute modules. If your worried about security please read the linked articles. In summary the articles support not using new Function/eval to process client input. So as long as your only importing local modules (Loader enforces this) then the safety concern is eliminated.
-			<div>Resources</div>
-			<ul>
-				<li><a href="http://2ality.com/2014/01/eval.html" target="_blank" re="noopener">http://2ality.com/2014/01/eval.html</a></li>
-				<li><a href="https://www.nczonline.net/blog/2013/06/25/eval-isnt-evil-just-misunderstood/" target="_blank" re="noopener">https://www.nczonline.net/blog/2013/06/25/eval-isnt-evil-just-misunderstood/</a></li>
-			</ul>
-		</p>
-
-		<strong>Install</strong>
-		<ul>
-			<li><i>npm install oxe --save</i></li>
-			<li>UMD <i>"dist/oxe.min.js"</i></li>
-			<li>UMD with Web Component Pollyfill <i>"dist/oxe.polly.min.js"</i></li>
-			<li>Web Component Pollyfill <i>"dist/webcomponents-lite.min.js"</i></li>
-		</ul>
-
-		<h2>Example</h2>
-		<pre>
-			<code class="language-js">${home}</code>
-		</pre>
-		<pre>
-			<code class="language-js">${indexjs}</code>
-		</pre>
-		<pre>
-			<code class="language-html">${indexhtml}</code>
-		</pre>
+		<div class="row">
+			<div class="col-xs-4">
+				<h3>Features</h3>
+				<p>Really Small 8.09KB gzipped and 27.08KB uncompressed</p>
+				<p>In browser ES6/ESM module and template strings support</p>
+			</div>
+			<div class="col-xs-4">
+				<h3>Support</h3>
+				<p>IE10~</p>
+				<p>IE11</p>
+				<p>Chrome</p>
+				<p>Firefox</p>
+				<p>Safari 7</p>
+				<p>Mobile Safari</p>
+				<p>Chrome Android</p>
+			</div>
+			<div class="col-xs-4">
+				<h3>Install</h3>
+				<p><i>npm install oxe --save</i></p>
+				<p>UMD <i>"dist/oxe.min.js"</i></p>
+				<p>UMD with Web Component Pollyfill <i>"dist/oxe.polly.min.js"</i></p>
+				<p>Web Component Pollyfill <i>"dist/webcomponents-lite.min.js"</i></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-4">
+				<h2>Example Component</h2>
+				<p>Create a new component by filling details out in object</p>
+			</div>
+			<div class="col-xs-8">
+				<pre>
+					<code class="language-js">${home}</code>
+				</pre>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-8">
+				<pre>
+					<code class="language-js">${indexjs}</code>
+				</pre>
+			</div>
+			<div class="col-xs-4">
+				<h2>Example Setup</h2>
+				<p>Create a new component by filling details out in object</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-4">
+				<h2>index.html</h2>
+				<p>Create a new component by filling details out in object</p>
+			</div>
+			<div class="col-xs-8">
+				<pre>
+					<code class="language-html">${indexhtml}</code>
+				</pre>
+			</div>
+		</div>
 	`
 });

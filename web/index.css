@@ -3,7 +3,8 @@
 	padding: 0;
 	color: dimgray;
 	box-sizing: border-box;
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 }
 
 body {
@@ -11,24 +12,34 @@ body {
 }
 
 html, body {
-	flex: 1;
+	/*flex: 1;*/
 	width: 100vw;
 	height: 100vh;
-	display: flex;
+	/*display: flex;*/
 	overflow-x: hidden;
     flex-direction: column;
 	background-color: white;
 }
-
+p, li {
+	font-weight: 100;
+	line-height: 1.3rem;
+}
 h1 {
 	font-size: 3rem;
-	font-weight: 300;
+	font-weight: 900;
 	margin: 1rem 0;
 }
 h2 {
 	font-weight: 300;
 	font-size: 2.9rem;
 	margin: 3rem 0 1rem 0;
+	color: darkorange;
+}
+h3 {
+	font-weight: 300;
+	font-size: 2.3rem;
+	margin: 3rem 0 1rem 0;
+	color: darkorange;
 }
 a {
 	cursor: pointer;
@@ -55,51 +66,60 @@ pre {
 
 .title {
 	display: block;
-	padding: 1rem 0;
+	padding: 6rem 0;
 	text-align: center;
+	background-color: #262626;
 }
 .title > h1 {
-	font-weight: 100;
-    color: lightslategrey;
+	/*font-weight: 100;*/
+	color: darkorange;
+	margin-top: 0;
 }
 .title > h2 {
 	font-weight: 100;
 	font-size: 1.3rem;
-    color: lightslategrey;
+    color: #fff;
+	margin: 0;
 }
-.title > h1 > span {
-	font-size: 3.9rem;
-	font-weight: 100;
-    color: darkorange;
-	text-transform: uppercase;
+.title > a {
+	text-decoration: none;
 }
 .menu {
-	width: 100%;
-	display: block;
-	text-align: center;
+	padding-left: 6vw;
 	background-color: whitesmoke;
-	border-bottom: solid 3px darkorange;
 }
 .menu > a {
 	display: inline-block;
 	padding: 1.3rem 1.9rem;
+	margin: 1rem auto;
 	text-transform: uppercase;
 }
 .menu > a:hover {
 	background: rgba(0, 0, 0, 0.1);
 }
-
+.button {
+	background-color: darkorange;
+	color: white;
+	padding: 1rem;
+	margin: 1rem 0.5rem;
+	display: inline-block;
+	border-radius: 2px;
+}
+.row {
+	padding: 0 6vw;
+	margin: auto;
+}
 /*
 	views
 */
 
 o-view {
-	padding: 1rem;
+
 	display: block;
 }
 o-view > :first-child {
 	margin: auto;
-	max-width: 900px;
+
 }
 
 v-root {
@@ -111,4 +131,9 @@ v-404 {
 	align-content: center;
 	justify-content: center;
 	flex-direction: column;
+}
+footer > * {
+	background-color: darkorange;
+	color: white !important;
+	font-size: 0.8rem;
 }

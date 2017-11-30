@@ -13,6 +13,7 @@
 	<title>Oxe</title>
 
 	<script src="assets/webcomponents-lite.min.js" defer></script>
+	<link rel="stylesheet" href="assets/flexboxgrid.min.css"></link>
 	<script src="assets/oxe.js" defer></script>
 	<script src="assets/prism.js" defer></script>
 	<script src="index.js" defer></script>
@@ -20,19 +21,37 @@
 	<link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-	<div class="title">
-		<h1><span>O</span>xe</h1>
-		<h2>A mighty tinny web components framework/library</h2>
-	</div>
-
-	<div class="menu">
-		<a href=".">Home</a>
-		<a href="test">Test</a>
-		<a href="performance" o-external>Performance</a>
+	<div class="menu row between-xs">
+		<div class="col-xs-3">
+			<object type="image/svg+xml" data="assets/Oxe.svg" width="100%"></object>
+		</div>
+		<div class="col-xs menu">
+			<a href=".">Home</a>
+			<a href="test">Test</a>
+			<a href="docs">Doxe</a>
+			<a href="performance" o-external>Performance</a>
+		</div>
 	</div>
 
 	<o-view></o-view>
+
+	<footer>
+		<div class="row">
+			<div class="col-xs">
+				<strong>Note</strong>
+				<p>Loader uses <i>XHR </i> and <i>new Function</i> to load on-demand and execute modules. If your worried about security please read the linked articles. In summary the articles support not using new Function/eval to process client input. So as long as your only importing local modules (Loader enforces this) then the safety concern is eliminated.</p>
+			</div>
+			<div class="col-xs">
+				<strong>Resources</strong>
+				<p>
+					<a href="http://2ality.com/2014/01/eval.html" target="_blank" re="noopener">http://2ality.com/2014/01/eval.html</a>
+				</p>
+				<p>
+					<a href="https://www.nczonline.net/blog/2013/06/25/eval-isnt-evil-just-misunderstood/" target="_blank" re="noopener">https://www.nczonline.net/blog/2013/06/25/eval-isnt-evil-just-misunderstood/</a>
+				</p>
+			</div>
+		</div>
+	</footer>
 
 </body>
 </html>

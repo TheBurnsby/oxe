@@ -84,8 +84,8 @@ Oxe.component.define({
 		<div class="title">
 			<h1>Oxe</h1>
 			<h2>A mighty tiny web components framework/library</h2>
-			<a class="button" src="">DOXE</a>
-			<a class="button" src="">GITHUB</a>
+			<a class="button" href="/docs">DOXE</a>
+			<a class="button" href="https://github.com/AlexanderElias/oxe" rel="noopener" target="_blank">GITHUB</a>
 		</div>
 
 		<div class="row">

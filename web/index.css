@@ -97,6 +97,18 @@ pre {
 .menu > a:hover {
 	background: rgba(0, 0, 0, 0.1);
 }
+.side-menu {
+	position: fixed;
+	left: 0;
+	top: 150px;
+	height: 100%;
+	padding: 1rem;
+	overflow: hidden;
+}
+.side-menu:nth-child(1) {
+	padding: 1rem;
+}
+
 .button {
 	background-color: darkorange;
 	color: white;
@@ -133,6 +145,7 @@ v-404 {
 	flex-direction: column;
 }
 footer > * {
+
 	background-color: darkorange;
 	color: white !important;
 	font-size: 0.8rem;

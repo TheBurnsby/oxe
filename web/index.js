@@ -34,6 +34,12 @@ Oxe.setup({
 				url: 'views/v-js.js'
 			},
 			{
+				title: 'Doxe',
+				path: '/docs',
+				component: 'v-docs',
+				url: 'views/v-docs.js'
+			},
+			{
 				title: '404',
 				path: '/{*}',
 				component: 'v-404',

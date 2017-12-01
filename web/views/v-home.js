@@ -83,7 +83,7 @@ Oxe.component.define({
 	html: `
 		<div class="title">
 			<h1>Oxe</h1>
-			<h2>A mighty tinny web components framework/library</h2>
+			<h2>A mighty tiny web components framework/library</h2>
 			<a class="button" src="">DOXE</a>
 			<a class="button" src="">GITHUB</a>
 		</div>

@@ -2,9 +2,14 @@ Oxe.component.define({
     name: 'v-docs',
     model: {
 	},
+    events: {
+        slideMenu: function () {
+            var menu = document.querySelector('.side-menu');
+            menu.style.transform = "translateX(0%)";
+        }
+    },
     created: function () {
 		var footer = document.querySelector('footer');
-		footer.style.display = 'none';
     },
     html: `
         <div class="side-menu">
@@ -32,7 +37,18 @@ Oxe.component.define({
 				<a href="">Define</a>
 				<a href="">Options</a>
 
-				<h4>Setup Options</h4>
+                <h4>Setup Options</h4>
+				<a href="">Setup</a>
+				<a href="">Loader</a>
+				<a href="">Keeper</a>
+				<a href="">Router</a>
+				<a href="">Fetcher</a>
+
+				<h4>Component</h4>
+				<a href="">Define</a>
+				<a href="">Options</a>
+
+                <h4>Setup Options</h4>
 				<a href="">Setup</a>
 				<a href="">Loader</a>
 				<a href="">Keeper</a>
@@ -44,5 +60,7 @@ Oxe.component.define({
 				<a href="">Options</a>
 			</div>
         </div>
+        <button o-on-click="slideMenu" type="button" name="button">Click</button>
+
     `
 });

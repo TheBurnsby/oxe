@@ -113,33 +113,33 @@ Oxe.component.define({
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-4">
+			<div class="col-sm-4 col-xs-12">
 				<h2>Example Component</h2>
 				<p>Create a new component by filling details out in object</p>
 			</div>
-			<div class="col-xs-8">
+			<div class="col-sm-8 col-xs-12">
 				<pre>
 					<code class="language-js">${home}</code>
 				</pre>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-8">
+			<div class="col-sm-8 col-xs-12">
 				<pre>
 					<code class="language-js">${indexjs}</code>
 				</pre>
 			</div>
-			<div class="col-xs-4">
+			<div class="col-sm-4 col-xs-12">
 				<h2>Example Setup</h2>
 				<p>Create a new component by filling details out in object</p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-4">
+			<div class="col-sm-4 col-xs-12">
 				<h2>index.html</h2>
 				<p>Create a new component by filling details out in object</p>
 			</div>
-			<div class="col-xs-8">
+			<div class="col-sm-8 col-xs-12">
 				<pre>
 					<code class="language-html">${indexhtml}</code>
 				</pre>
